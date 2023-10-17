@@ -5,7 +5,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите строку: ");
         String string = scanner.nextLine();
-
         String pervayaCifraStr = string.substring(0, 1);
         int pervayaCifra = Integer.parseInt(pervayaCifraStr);
         if (pervayaCifra == 0){
@@ -13,13 +12,13 @@ public class Main {
         }
         String space = " ";
         String vtorayaCifraStr = string.substring(1, 2);
-        if (vtorayaCifraStr.equals(space)) {  // тут продолжаем вычисления при первом числе < 10
+        if (vtorayaCifraStr.equals(space)) {
             String tretyaCifraStr = string.substring(4, 5);
             int tretyaCifra= Integer.parseInt(tretyaCifraStr);
             int dlinaStroki = string.length();
 
               if (tretyaCifra == 0 || dlinaStroki > 6) {
-                  System.out.println("Второе число не подходит под условия задания");
+                  System.out.println("Выражение не подходит под условия");
               }
               else if(dlinaStroki == 5){
                       String operand = string.substring(2, 3);
@@ -118,10 +117,9 @@ public class Main {
                     System.out.println("Второе число не может учавствовать в выражении");
                 }
             }
-            }
         }
-
-        }
+    }
+}
 
 
 
