@@ -71,8 +71,8 @@ public class Main {
             int tretyaCifra= Integer.parseInt(tretyaCifraStr);
             String pervoeChisloStr = string.substring(0, 2);
             int pervoeChislo = Integer.parseInt(pervoeChisloStr);
-            if (pervoeChislo > 10 || pervoeChislo == 0) {
-                System.out.println("Первое число не может учавствовать в выражении");
+            if (pervoeChislo > 10 || pervoeChislo == 0 || tretyaCifra == 0) {
+                System.out.println("Не соблюдены условия задания");
             }
             else if(dlinaStroki == 6) {
                 String operand = string.substring(3, 4);
